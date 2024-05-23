@@ -1,7 +1,5 @@
 ## Hi there, thanks for stopping by!
 
-## Hi there, thanks for stopping by!
-
 ### "What is this?" you might wonder, especially since you were just Googling how to architect a microservice for your Dockerized AWS instance running a PostgreSQL database. Or maybe you weren't.
 
 ### Either way, you've stumbled upon something even better: my portfolio website!
