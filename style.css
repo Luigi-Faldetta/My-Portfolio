@@ -214,7 +214,8 @@ button:active {
   transform: translateX(16em);
 }
 
-* Services */ .services {
+/* Services */
+.services {
   background: var(--second-bg-color);
 }
 .heading {
