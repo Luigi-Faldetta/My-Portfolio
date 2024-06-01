@@ -83,6 +83,9 @@ section {
   /* padding: 5rem 9% 5rem; */
   position: relative;
   padding-top: 12rem;
+  padding-bottom: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
   /* margin-top: -100px; */
 }
 
@@ -314,6 +317,14 @@ button:active {
   }
 }
 
+@media (max-width: 895px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 /* Services */
 .services {
   background: var(--second-bg-color);
@@ -442,7 +453,7 @@ button:active {
   color: var(--text-color);
   border-radius: 1rem;
   padding: 2rem;
-  width: 80%;
+  width: fit-content;
   height: fit-content;
   margin: auto;
   margin-top: 2rem;
@@ -636,5 +647,184 @@ button:active {
   }
   .education .right {
     left: 0%;
+  }
+}
+
+/* conatct */
+
+.contact {
+  background: var(--bg-color);
+}
+.contact .container {
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+  background: var(--second-bg-color);
+}
+.contact .container .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+}
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-right {
+  flex-basis: 60%;
+}
+.contact .contact-left .sub-title {
+  font-size: 4rem;
+}
+.contact .contact-left p {
+  margin-top: 30px;
+  font-size: 16px;
+}
+.contact .contact-left p i {
+  color: var(--main-color);
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.contact .contact-right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #000000;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+  resize: none;
+}
+
+.btn-cv {
+  display: inline-block;
+  background: transparent;
+  padding: 1rem 2rem;
+  color: black;
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+}
+.btn-cv:hover {
+  background: var(--main-color);
+  border: none;
+  box-shadow: 0 0 25px var(--main-color);
+}
+.contact .button p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.btn-cv a {
+  color: var(--main-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.btn-cv:hover a {
+  color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  .contact .container {
+    margin: 0;
+    padding: 0;
+  }
+  .contact .container .row {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1rem;
+    padding: 2rem 0.2rem 2rem 0.2rem;
+    gap: 1rem;
+  }
+}
+
+/* footer */
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background: var(--main-color);
+}
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #000000;
+}
+.footer .social a {
+  font-size: 25px;
+  color: #000000;
+  border: 2px solid black;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.3s ease;
+}
+.footer .social a:hover {
+  transform: scale(1.2) translateY(-5px);
+  background: black;
+  color: var(--main-color);
+  box-shadow: 0 0 15px black;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+.footer ul li a {
+  color: #000000;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease;
+}
+.footer ul li a:hover {
+  border-bottom: 2px solid black;
+}
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer .copyright {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+}
+
+@media (max-width: 1285px) {
+  html {
+    font-size: 55%;
+  }
+  .service-container {
+    padding-bottom: 7rem;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 5rem;
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+  section {
+    padding: 5rem 3% 2rem;
+  }
+  .services {
+    padding-bottom: 7rem;
+  }
+  .footer {
+    padding: 2rem 3%;
   }
 }
