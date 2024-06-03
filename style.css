@@ -108,6 +108,7 @@ section {
   box-shadow: 0 0 15px var(--main-color), 0 0 25px var(--main-color),
     0 0 70px var(--main-color);
   transform: scale(1.01);
+  cursor: auto;
 }
 
 .home .home-content h1 {
@@ -118,6 +119,13 @@ section {
 
 span {
   color: var(--main-color);
+}
+
+.home-button a {
+  color: var(--main-color);
+}
+.home-button a:hover {
+  color: var(--bg-color);
 }
 
 .home-content h3 {
@@ -351,6 +359,7 @@ button:active {
   border: 1px solid var(--main-color);
   transition: 0.3s ease;
 }
+
 .services .single-service:hover {
   border: none;
   box-shadow: 0 0 15px 0 #fd550dde;
@@ -427,6 +436,7 @@ button:active {
 }
 .services .single-service:hover a {
   color: #000000;
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {
@@ -593,6 +603,7 @@ button:active {
   background: var(--main-color);
   position: relative;
   border-radius: 6px;
+  cursor: pointer;
 }
 .education .content .tag {
   font-size: 1.5rem;
@@ -648,6 +659,10 @@ button:active {
   .education .right {
     left: 0%;
   }
+}
+
+h4 {
+  color: #000000;
 }
 
 /* conatct */
