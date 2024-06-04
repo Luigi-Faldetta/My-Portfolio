@@ -535,6 +535,26 @@ button:active {
   margin-left: 0.5rem;
 }
 
+@media screen and (max-width: 860px) {
+  .skills .container {
+    padding: 1rem;
+  }
+
+  .skills .container .row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .skills .container .bar {
+    width: 14rem;
+    height: 12rem;
+  }
+
+  .skills .container .bar .info span {
+    font-size: 1.8rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .skills .container {
     margin: 0;
@@ -546,6 +566,11 @@ button:active {
     padding: 2rem 0.2rem 2rem 0.2rem;
     gap: 1rem;
   }
+
+  .bar {
+    justify-self: center;
+  }
+
   .skills .container {
     margin-top: 5px;
     width: 100%;
@@ -777,7 +802,8 @@ form textarea {
 
 @media screen and (max-width: 600px) {
   .contact .container {
-    margin: 0;
+    /* margin: 0; */
+    margin: auto;
     padding: 0;
   }
   .contact .container .row {
