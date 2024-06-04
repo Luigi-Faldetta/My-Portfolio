@@ -4,6 +4,7 @@ let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
+//handling click event for skills and education
 document.addEventListener('DOMContentLoaded', function () {
   const bars = document.querySelectorAll('.skills .container .bar');
   bars.forEach((bar) => {
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+//handling scroll to each section
 window.onscroll = () => {
   sections.forEach((sec) => {
     let top = window.scrollY;
@@ -47,3 +49,20 @@ menuIcon.onclick = () => {
   menuIcon.classList.toggle('bx-x');
   navbar.classList.toggle('active');
 };
+
+//handling form submission
+window.addEventListener('load', function () {
+  const form = document.getElementById('form');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    }).then(() => {
+      document.getElementById('form').reset();
+      alert('Message sent');
+    });
+  });
+});
