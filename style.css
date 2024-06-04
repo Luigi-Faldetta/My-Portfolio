@@ -357,6 +357,9 @@ button:active {
 }
 
 @media (max-width: 895px) {
+  .home-img img {
+    width: 54vw;
+  }
   .home {
     display: flex;
     flex-direction: column;
