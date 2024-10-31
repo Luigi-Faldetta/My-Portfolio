@@ -202,6 +202,7 @@ span {
   all: unset;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   padding: 0.6em 2em;
   border: medium solid var(--main-color);
@@ -487,10 +488,102 @@ button:active {
   }
 }
 
+/* Projects */
+
+.view-project-button {
+  font-size: 14px;
+}
+
+.view-project-button:hover {
+  color: white !important;
+}
+
+.projects {
+  background: var(--bg-color);
+}
+
+.projects .heading {
+  margin-bottom: 4rem;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 12rem auto;
+}
+
+.project-card {
+  background: var(--bg-color);
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(25% - 2rem);
+  height: 48rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px var(--main-color);
+}
+
+.project-image img {
+  width: 8rem;
+  height: auto;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border-radius: 12px;
+}
+
+.project-content {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-content h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.project-content p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.project-content .button {
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+@media (max-width: 1200px) {
+  .project-card {
+    width: calc(45% - 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    width: 100%;
+  }
+}
+
 /* skills */
 
 .skills {
-  background: var(--bg-color);
+  background: var(--second-bg-color);
 }
 .skills .container {
   background: #f55d1b86;
@@ -582,7 +675,7 @@ button:active {
 
 /* education */
 .education {
-  background: var(--second-bg-color);
+  background: var(--bg-color);
 }
 
 .education .timeline {
@@ -724,7 +817,7 @@ h4 {
   color: #000000;
 }
 
-/* conatct */
+/* contact */
 
 .contact {
   background: var(--bg-color);
