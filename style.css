@@ -311,7 +311,7 @@ button:active {
 @keyframes words {
   0%,
   20% {
-    content: 'Web Developer';
+    content: 'System Architect';
   }
   21%,
   40% {
