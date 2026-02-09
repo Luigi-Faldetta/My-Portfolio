@@ -531,6 +531,12 @@ button:active {
   box-shadow: 0 4px 15px var(--main-color);
 }
 
+.project-image {
+  height: 12rem;
+  display: flex;
+  align-items: flex-start;
+}
+
 .project-image img {
   width: 8rem;
   height: 8rem;
