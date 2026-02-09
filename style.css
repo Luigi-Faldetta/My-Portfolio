@@ -520,7 +520,7 @@ button:active {
   border-radius: 10px;
   overflow: hidden;
   width: calc(25% - 2rem);
-  height: 48rem;
+  height: 54rem;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
