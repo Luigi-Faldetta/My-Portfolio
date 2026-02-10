@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="96" fill="#3b72ff"/>
+
+  <!-- Home icon centered and scaled -->
+  <g transform="translate(128, 128)">
+    <path d="M128 21.3333L21.3333 106.667V234.667C21.3333 240.34 23.5857 245.781 27.5865 249.781C31.5873 253.781 37.0279 256 42.6667 256H106.667V170.667C106.667 165.028 108.919 159.587 112.92 155.587C116.921 151.587 122.361 149.333 128 149.333H128C133.639 149.333 139.079 151.587 143.08 155.587C147.081 159.587 149.333 165.028 149.333 170.667V256H213.333C218.972 256 224.413 253.781 228.413 249.781C232.414 245.781 234.667 240.34 234.667 234.667V106.667L128 21.3333Z" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M0 128L128 21.3333L256 128" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

@@ -494,8 +494,13 @@ button:active {
   font-size: 14px;
 }
 
-.view-project-button:hover {
-  color: white !important;
+.view-project-button span {
+  position: relative;
+  z-index: 1;
+}
+
+.view-project-button:hover span {
+  color: #fff;
 }
 
 .projects {
